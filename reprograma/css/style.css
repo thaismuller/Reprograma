@@ -1,0 +1,117 @@
+/*infos que valem pro site inteiro*/
+/*chama{
+        propriedade: valor
+    */
+* {
+    box-sizing: border-box; /*para sites responsivos colocar em celular*/ 
+}
+
+
+body{
+    font-family: 'Ralaway', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-size: 40px;
+}
+
+p{
+    font-size: 18px;
+
+}
+a{
+    text-decoration: none; /*nenhum */
+}
+
+/*classes no CSS */
+/*HEADER/BANNER*/
+
+.banner {
+    background: url(../img/banner-bg.png) center no-repeat;
+    background-size: cover;
+    height: 560px;
+    color: white;
+}
+
+.banner__conteudo{
+    padding: 260px ; /*irmao da margem, seria um enchimento*/
+    color: white;
+     text-align: center;
+}
+.banner__titulo{
+    font-size: 50px;
+    margin-bottom: 0 ;
+}
+.banner__subtitulo{
+    font-size: 24px;
+}
+
+/* Botão */
+
+.botao {
+    background-color: #fff;
+    color: #7E459B;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1080px;
+    margin-top: 90px;
+}
+
+.sobre-titulo {
+    font-size: 40px;
+    color: rgb(194, 119, 218);
+}
+
+/* DIV que funciona como o 'mãe' dos dois grandes elementos da sua tela. Ele 
+manda na disposição desses elementos 'filhos' e só tem a função de disposição na tela */
+
+.sobre {
+    display: flex;
+}
+
+.sobre__descricao, .sobre__habilidades   {
+    width: 50%;
+    line-height: 30px;
+}
+
+.sobre__habilidades {
+    margin-left: 70px;
+}
+
+.sobre__habilidades-lista {
+    font-size: 18px;
+}
+
+.sobre__cv {
+    border: 1px solid #7E459B;
+}
+
+/* REDES SOCIAS */
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.redes-sociais__link {
+    background-color: #7E459B;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 20%;
+}
+
+.copyright {
+    color: black;
+    margin-top: 50px;
+    text-align: center;
+}
